@@ -12,6 +12,10 @@ fn average(rgba: Rgba<u8>) -> i32 {
     sum / len
 }
 
+fn video_to_images(path: String) {
+
+}
+
 pub fn generate_ascii(path: String, print: bool) -> String {
     let img = Reader::open(path).unwrap().decode().unwrap();
     let chars: Vec<char> = r"$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,".chars().rev().collect(); 
